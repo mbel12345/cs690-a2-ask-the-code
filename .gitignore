@@ -21,3 +21,5 @@ __pycache__/
 
 # NOTE: results/ and ai_replies/ are NOT ignored. Commit them; the grader
 # needs them to check and reproduce your experiments (HANDOUT.md, Step 5).
+
+*.log
