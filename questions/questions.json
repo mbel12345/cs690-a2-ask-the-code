@@ -1,62 +1,62 @@
 [
   {
-    "id": "q1",
+    "id": "q01",
     "question": "Which function adds cookies to the cookiejar?",
     "expected_file": "cookies.py",
     "expected_function": "merge_cookies",
     "expected_answer": "merge_cookies (line 543)."
   },
   {
-    "id": "q2",
+    "id": "q02",
     "question": "How do you send a PATCH request?",
     "expected_file": "models.py",
     "expected_function": "patch",
     "expected_answer": "Call the request method for a given URL (lines 143-155)."
   },
   {
-    "id": "q3",
+    "id": "q03",
     "question": "Which method strips secrets from the credentials to avoid leakage?",
     "expected_file": "sessions.py",
     "expected_function": "SessionRedirectMixin.rebuild_auth",
     "expected_answer": "rebuild_auth (line 282-286)."
   },
   {
-    "id": "q4",
+    "id": "q04",
     "question": "Can you pass JSON to a delete request?",
     "expected_file": "api.py",
     "expected_function": "delete",
     "expected_answer": "No, this function only accepts url and kwargs (lines 148-157)."
   },
   {
-    "id": "q5",
+    "id": "q05",
     "question": "After a request is complete, what cleanup happens for the connection?",
     "expected_file": "models.py",
     "expected_function": "PreparedRequest.close",
     "expected_answer": "The connection is released back into the pool (lines 1032-1037)."
   },
   {
-    "id": "q6",
+    "id": "q06",
     "question": "What adds the status codes list to the documentation?",
     "expected_file": "status_codes.py",
     "expected_function": "_init.doc",
     "expected_answer": "A list of all status codes in this file is appended to a string (116-118)."
   },
   {
-    "id": "q7",
+    "id": "q07",
     "question": "How do you remove a cookie?",
     "expected_file": "cookies.py",
     "expected_function": "remove_cookie_by_name",
     "expected_answer": "The connection is released back into the pool (lines 151)."
   },
   {
-    "id": "q8",
+    "id": "q08",
     "question": "How do hooks get registered?",
     "expected_file": "models.py",
     "expected_function": "RequestHooksMixin.register_hook",
     "expected_answer": "You provide a hook and event to the register_hook function, and it maps the event to the hook (lines 207-216)."
   },
   {
-    "id": "q9",
+    "id": "q09",
     "question": "How do you access the text of a response?",
     "expected_file": "models.py",
     "expected_function": "response.text",
