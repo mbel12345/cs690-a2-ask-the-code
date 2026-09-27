@@ -1,14 +1,70 @@
 [
   {
-    "id": "example-1",
-    "question": "Does requests keep the Authorization header when a redirect goes from http to https on the same host?",
-    "expected_file": "sessions.py",
-    "expected_function": "SessionRedirectMixin.should_strip_auth",
-    "expected_answer": "Yes. For an http to https redirect on the same host with the standard ports, should_strip_auth returns False, so the header is kept (lines 137 to 143)."
+    "id": "q1",
+    "question": "Which function adds cookies to the cookiejar?",
+    "expected_file": "cookies.py",
+    "expected_function": "merge_cookies",
+    "expected_answer": "merge_cookies (line 543)."
   },
   {
-    "id": "example-2",
-    "question": "Which company pays for hosting the requests documentation?",
+    "id": "q2",
+    "question": "How do you send a PATCH request?",
+    "expected_file": "models.py",
+    "expected_function": "patch",
+    "expected_answer": "Call the request method for a given URL (lines 143-155)."
+  },
+  {
+    "id": "q3",
+    "question": "Which method strips secrets from the credentials to avoid leakage?",
+    "expected_file": "sessions.py",
+    "expected_function": "SessionRedirectMixin.rebuild_auth",
+    "expected_answer": "rebuild_auth (line 282-286)."
+  },
+  {
+    "id": "q4",
+    "question": "Can you pass JSON to a delete request?",
+    "expected_file": "api.py",
+    "expected_function": "delete",
+    "expected_answer": "No, this function only accepts url and kwargs (lines 148-157)."
+  },
+  {
+    "id": "q5",
+    "question": "After a request is complete, what cleanup happens for the connection?",
+    "expected_file": "models.py",
+    "expected_function": "PreparedRequest.close",
+    "expected_answer": "The connection is released back into the pool (lines 1032-1037)."
+  },
+  {
+    "id": "q6",
+    "question": "What adds the status codes list to the documentation?",
+    "expected_file": "status_codes.py",
+    "expected_function": "_init.doc",
+    "expected_answer": "A list of all status codes in this file is appended to a string (116-118)."
+  },
+  {
+    "id": "q7",
+    "question": "How do you remove a cookie?",
+    "expected_file": "cookies.py",
+    "expected_function": "remove_cookie_by_name",
+    "expected_answer": "The connection is released back into the pool (lines 151)."
+  },
+  {
+    "id": "q8",
+    "question": "How do hooks get registered?",
+    "expected_file": "models.py",
+    "expected_function": "RequestHooksMixin.register_hook",
+    "expected_answer": "You provide a hook and event to the register_hook function, and it maps the event to the hook (lines 207-216)."
+  },
+  {
+    "id": "q9",
+    "question": "How do you access the text of a response?",
+    "expected_file": "models.py",
+    "expected_function": "response.text",
+    "expected_answer": "You access the text attribute of the response (lines 910-945)."
+  },
+  {
+    "id": "q10",
+    "question": "Who can provide technical support for this codebase?",
     "expected_file": null,
     "expected_function": null,
     "expected_answer": "The code cannot answer this. A correct reply says not found in the code shown, with null file and line."
