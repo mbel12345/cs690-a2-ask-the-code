@@ -40,7 +40,34 @@ def split_file(path: Path, root: Path) -> list[Chunk]:
     and each decorator node has its own .lineno. A class node has .name and .body.
     Read the file with encoding="utf-8".
     """
-    raise NotImplementedError("Step 2: write split_file in askcode/split.py")
+
+    out = []
+    out_file = str(path).replace(str(root).strip("/") + "/", "").strip("/")
+    text = path.read_text(encoding="utf-8")
+    tree = ast.parse(text)
+    for a in tree.body:
+      if isinstance(a, ast.FunctionDef):
+         start = a.lineno - len(a.decorator_list)
+         out.append(Chunk(
+            name=a.name,
+            start_line=start,
+            end_line=a.end_lineno,
+            text="\n".join(text.split("\n")[start - 1 : a.end_lineno]),
+            file=out_file,
+         ))
+      elif isinstance(a, ast.ClassDef):
+         for b in a.body:
+            if isinstance(b, ast.FunctionDef):
+               start = b.lineno - len(b.decorator_list)
+               out.append(Chunk(
+                  name=f"{a.name}.{b.name}",
+                  start_line=start,
+                  end_line=b.end_lineno,
+                  text="\n".join(text.split("\n")[start - 1 : b.end_lineno]),
+                  file=out_file,
+               ))
+
+    return out
 
 
 def split_corpus(root: Path = CORPUS_DIR) -> list[Chunk]:
@@ -50,4 +77,10 @@ def split_corpus(root: Path = CORPUS_DIR) -> list[Chunk]:
     and sorted as plain strings. Keep each file's chunks in file order.
     For the requests codebase this returns 230 chunks.
     """
-    raise NotImplementedError("Step 2: write split_corpus in askcode/split.py")
+
+    out = []
+    files = sorted(list(Path(root).rglob("*")))
+    for _file in files:
+      out += split_file(_file, root)
+
+    return out
