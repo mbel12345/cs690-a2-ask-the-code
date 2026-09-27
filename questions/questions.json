@@ -4,12 +4,12 @@
     "question": "Which function adds cookies to the cookiejar?",
     "expected_file": "cookies.py",
     "expected_function": "merge_cookies",
-    "expected_answer": "merge_cookies (line 543)."
+    "expected_answer": "merge_cookies (line 542-561)."
   },
   {
     "id": "q02",
     "question": "How do you send a PATCH request?",
-    "expected_file": "models.py",
+    "expected_file": "api.py",
     "expected_function": "patch",
     "expected_answer": "Call the request method for a given URL (lines 143-155)."
   },
@@ -18,7 +18,7 @@
     "question": "Which method strips secrets from the credentials to avoid leakage?",
     "expected_file": "sessions.py",
     "expected_function": "SessionRedirectMixin.rebuild_auth",
-    "expected_answer": "rebuild_auth (line 282-286)."
+    "expected_answer": "rebuild_auth (line 282-300)."
   },
   {
     "id": "q04",
@@ -29,24 +29,24 @@
   },
   {
     "id": "q05",
-    "question": "After a request is complete, what cleanup happens for the connection?",
+    "question": "After a response is complete, what cleanup happens for the connection?",
     "expected_file": "models.py",
-    "expected_function": "PreparedRequest.close",
-    "expected_answer": "The connection is released back into the pool (lines 1032-1037)."
+    "expected_function": "Response.close",
+    "expected_answer": "The connection is released back into the pool (lines 1026-1037)."
   },
   {
     "id": "q06",
     "question": "What adds the status codes list to the documentation?",
     "expected_file": "status_codes.py",
-    "expected_function": "_init.doc",
-    "expected_answer": "A list of all status codes in this file is appended to a string (116-118)."
+    "expected_function": "_init",
+    "expected_answer": "A list of all status codes in this file is appended to a string (109-125)."
   },
   {
     "id": "q07",
     "question": "How do you remove a cookie?",
     "expected_file": "cookies.py",
     "expected_function": "remove_cookie_by_name",
-    "expected_answer": "The connection is released back into the pool (lines 151)."
+    "expected_answer": "The connection is released back into the pool (lines 151-167)."
   },
   {
     "id": "q08",
@@ -59,8 +59,8 @@
     "id": "q09",
     "question": "How do you access the text of a response?",
     "expected_file": "models.py",
-    "expected_function": "response.text",
-    "expected_answer": "You access the text attribute of the response (lines 910-945)."
+    "expected_function": "Response.text",
+    "expected_answer": "You access the text attribute of the response (lines 909-945)."
   },
   {
     "id": "q10",
