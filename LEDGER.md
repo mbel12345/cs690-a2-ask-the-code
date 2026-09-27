@@ -40,10 +40,10 @@ changed:   two misses were retrieval failures, so I looked at why word search mi
 ## My entries
 
 ## Entry 1
-artifact:
-tool:
-prompts:
-review:
-checks:
-evidence:
-risk:
+artifact: .env.example and .env at commit c80990a
+tool: provider openai, model gpt-5.6-luna. Input token cost per MTOKEN: 0.10, Output token cost per MTOKEN: 0.50
+prompts: Google search for OpenAI pricing - https://developers.openai.com/api/docs/pricing
+review: My model is luna, so I found that in the chart
+checks: python -m askcode.check_setup
+evidence: All checks passed
+risk: Accidentally recording the wrong model
