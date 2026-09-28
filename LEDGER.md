@@ -49,7 +49,7 @@ evidence: All checks passed
 risk: Accidentally recording the wrong model
 
 ## Entry 2
-artifact: search_words.py at commit ???
+artifact: search_words.py at commit f4737df
 tool: Copilot, for splitting words properly
 prompts: I asked it how to split words, since .split() was not enough and doesn't handle underscores.
 review: Solution is consistent with my regex knowledge
