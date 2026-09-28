@@ -47,3 +47,12 @@ review: My model is luna, so I found that in the chart
 checks: python -m askcode.check_setup
 evidence: All checks passed
 risk: Accidentally recording the wrong model
+
+## Entry 2
+artifact: search_words.py at commit ???
+tool: Copilot, for splitting words properly
+prompts: I asked it how to split words, since .split() was not enough and doesn't handle underscores.
+review: Solution is consistent with my regex knowledge
+checks: test_search.py
+evidence: All test cases related to search_words passed
+risk: If there is an edge case I didn't think about
