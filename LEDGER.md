@@ -51,8 +51,22 @@ risk: Accidentally recording the wrong model
 ## Entry 2
 artifact: search_words.py at commit f4737df
 tool: Copilot, for splitting words properly
-prompts: I asked it how to split words, since .split() was not enough and doesn't handle underscores.
-review: Solution is consistent with my regex knowledge
-checks: test_search.py
-evidence: All test cases related to search_words passed
+prompts: How to properly extract words? Split didn't work, I need to be able to handle _ and stuff
+review: Solution is consistent with my regex knowledge. But it also didn't fix my problem of breaking up based on _ being a word boundary, so I had to remove _ from the regex.
+checks: ai_replies/copilot_entry_2.txt (I didn't understand the ledger requirement at first, which is why I went back later to add the actual AI output)
+evidence: All test cases related to search_words passed (test_search.py)
 risk: If there is an edge case I didn't think about
+
+# Entry 3
+dataset:   results/*.csv at d84a4be
+result:    results/summary_step_5.txt
+changed:   I determined that the gold result was the best, which confirms that reading the whole corpus does not make it better (more is not always better).
+
+## Entry 4
+artifact: answer.py at commit f4737df
+tool: Copilot, for processing data types properly
+prompts: How to properly check if something is in int, because it appears it is classifying a true as an int
+review: This is consistent with my understanding of datatypes. Also, it talked about floats, but I ommitted any references to floats in my code since I know line line must be an int.
+checks: ai_replies/copilot_entry_4.txt
+evidence: All test cases related to answer.py passed
+risk: Low risk, this is a very simple question, mitigated by testing. It could mess up a few edge cases if wrong.

@@ -1,0 +1,44 @@
+Matthew, this is a classic Python gotcha — True and False are integers in Python.
+Literally:
+
+python
+isinstance(True, int)   # → True
+isinstance(False, int)  # → True
+Because under the hood:
+
+python
+True == 1
+False == 0
+So if you check:
+
+python
+isinstance(value, int)
+then booleans will pass that test, because bool is a subclass of int.
+
+This is why your validator is treating True as an integer.
+
+Each item begins with a Guided Link.
+
+You want to check:
+
+is it an integer OR a float
+
+but NOT a boolean
+
+So you need a rule that excludes booleans.
+
+⭐ Correct way to check “is a number but not a bool”
+Here are the two safe patterns.
+
+✔ Option 1 — Check type explicitly
+python
+type(value) in (int, float)
+This works because:
+
+type(True) is bool, not int
+
+type(10) is int
+
+type(3.14) is float
+
+Guided Link: type check

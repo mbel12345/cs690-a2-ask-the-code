@@ -1,0 +1,34 @@
+You’re right that plain split() won’t cut it if you care about things like snake_case, Response.close, etc. You need something that understands “word characters” instead of just whitespace.
+
+The clean way to do that in Python is with regex.
+
+Option 1: Treat underscores as part of words (snake_case friendly)
+python
+import re
+
+text = "Response.close _snake_case foo_bar, x+y"
+words = re.findall(r"[A-Za-z0-9_]+", text)
+print(words)
+Output:
+
+python
+['Response', 'close', '_snake_case', 'foo_bar', 'x', 'y']
+This keeps _ inside words.
+
+Option 2: Use \w (letters, digits, underscore)
+python
+import re
+
+words = re.findall(r"\w+", text)
+
+Option 3: If you want to break on dots but keep underscores
+For something like Response.close → ["Response", "close"]:
+
+python
+import re
+
+text = "Response.close foo_bar"
+words = re.findall(r"[A-Za-z0-9_]+", text)
+Dots, commas, parentheses, etc. are all treated as separators.
+
+If you tell me what you want to do with these words (e.g., scoring, matching, indexing), I can tune the pattern exactly to your use case.
