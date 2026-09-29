@@ -3,6 +3,6 @@ Table 2. Answers
 | Run | Valid JSON | Right place | Correct (your marks) | Input tokens | Output tokens | Cost (USD) |
 | --- | --- | --- | --- | --- | --- | --- |
 | top3_words_five_part | 10 of 10 | 5 of 10 | 7 of 10 | 13,013 | 470 | 0.0015 |
-| whole_five_part | 10 of 10 | 7 of 10 | 8 of 10 (1 unmarked) | 546,743 | 403 | 0.0549 |
+| whole_five_part | 10 of 10 | 7 of 10 | 9 of 10 | 546,743 | 403 | 0.0549 |
 | gold_five_part | 10 of 10 | 10 of 10 | 10 of 10 | 3,598 | 530 | 0.0006 |
 | top3_words_minimal | 4 of 10 | 2 of 10 | 7 of 10 | 11,456 | 2,729 | 0.0025 |
