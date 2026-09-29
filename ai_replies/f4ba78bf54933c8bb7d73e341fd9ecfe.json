@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "f4ba78bf54933c8bb7d73e341fd9ecfe",
+  "asked_at": "2026-09-29T00:58:09+00:00",
+  "input_tokens": 1209,
+  "output_tokens": 110,
+  "text": "{\n  \"answer\": \"Use `requests.patch()` with the target URL and optionally provide the request body via `data` or `json`. For example: `response = requests.patch('https://api.example.com/resource/1', json={'name': 'Updated name'})`. You can inspect the result with `response.status_code` and `response.json()`. The equivalent generic call is `requests.request('PATCH', url, json=payload)`.\",\n  \"file\": \"api.py\",\n  \"line\": 133\n}"
+}

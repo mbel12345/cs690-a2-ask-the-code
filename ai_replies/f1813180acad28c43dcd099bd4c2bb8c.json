@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "f1813180acad28c43dcd099bd4c2bb8c",
+  "asked_at": "2026-09-29T00:58:39+00:00",
+  "input_tokens": 926,
+  "output_tokens": 436,
+  "text": "{\n  \"answer\": \"The Requests maintainers and community can provide technical support through the project's GitHub repository and the Python Requests Stack Overflow community.\",\n  \"file\": \"README.rst\",\n  \"line\": \"Support section\"\n}"
+}

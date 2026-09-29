@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "e52b968cb6278f35a7039fe8cd30c202",
+  "asked_at": "2026-09-29T00:58:17+00:00",
+  "input_tokens": 1274,
+  "output_tokens": 382,
+  "text": "{\n  \"answer\": \"The response closes its raw connection if the content has not been fully consumed, then releases the connection back to the connection pool.\",\n  \"file\": \"models.py\",\n  \"line\": 1031\n}"
+}

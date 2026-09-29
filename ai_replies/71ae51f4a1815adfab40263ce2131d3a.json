@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "71ae51f4a1815adfab40263ce2131d3a",
+  "asked_at": "2026-09-29T00:58:33+00:00",
+  "input_tokens": 411,
+  "output_tokens": 395,
+  "text": "{\n  \"answer\": \"Hooks are registered through RequestHooksMixin.register_hook in models.py. A callable hook is appended to the list for the specified event; an iterable of hooks is extended into that list. During a request, session-level and request-level hooks are merged by merge_hooks, then dispatch_hook looks up the event and invokes each hook in order. A hook may return replacement hook data; returning None leaves the current data unchanged. Hooks can be removed with deregister_hook, which removes the matching hook from the event list.\",\n  \"file\": \"models.py; sessions.py; hooks.py\",\n  \"line\": \"models.py: register_hook (immediately before lines 218–227); sessions.py: 91–103; hooks.py: 22–33\"\n}"
+}

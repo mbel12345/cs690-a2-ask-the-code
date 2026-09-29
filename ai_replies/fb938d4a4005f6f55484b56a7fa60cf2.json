@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "fb938d4a4005f6f55484b56a7fa60cf2",
+  "asked_at": "2026-09-29T00:58:07+00:00",
+  "input_tokens": 1447,
+  "output_tokens": 414,
+  "text": "{\n  \"answer\": \"cookiejar_from_dict\",\n  \"file\": \"models.py\",\n  \"line\": 624\n}"
+}

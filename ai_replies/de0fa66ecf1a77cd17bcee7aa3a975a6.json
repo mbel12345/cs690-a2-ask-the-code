@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "de0fa66ecf1a77cd17bcee7aa3a975a6",
+  "asked_at": "2026-09-29T00:58:27+00:00",
+  "input_tokens": 484,
+  "output_tokens": 140,
+  "text": "{\n  \"answer\": \"Remove a cookie by calling `remove_cookie_by_name(cookiejar, name, domain=None, path=None)`. It finds matching cookies and removes them with `cookiejar.clear(domain, path, name)`. With `RequestsCookieJar`, you can also use `jar.set(name, None, domain=..., path=...)` or `del jar[name]`.\",\n  \"file\": \"cookies.py\",\n  \"line\": \"151-167\"\n}"
+}

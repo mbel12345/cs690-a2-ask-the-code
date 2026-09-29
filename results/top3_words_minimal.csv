@@ -1,0 +1,51 @@
+id,question,expected_file,expected_function,retrieved,hit,hit_rank,valid_json,reply_answer,reply_file,reply_line,right_place,input_tokens,output_tokens,provider,model,price_input_per_mtok,price_output_per_mtok,raw_reply,correct
+q01,Which function adds cookies to the cookiejar?,cookies.py,merge_cookies,models.py::PreparedRequest.prepare_cookies; cookies.py::RequestsCookieJar._find_no_duplicates; api.py::request,no,,yes,cookiejar_from_dict,models.py,624,no,1447,414,openai,gpt-5.6-luna,0.1,0.5,"{
+  ""answer"": ""cookiejar_from_dict"",
+  ""file"": ""models.py"",
+  ""line"": 624
+}",no
+q02,How do you send a PATCH request?,api.py,patch,api.py::request; api.py::patch; sessions.py::Session.patch,yes,2,yes,"Use `requests.patch()` with the target URL and optionally provide the request body via `data` or `json`. For example: `response = requests.patch('https://api.example.com/resource/1', json={'name': 'Updated name'})`. You can inspect the result with `response.status_code` and `response.json()`. The equivalent generic call is `requests.request('PATCH', url, json=payload)`.",api.py,133,yes,1209,110,openai,gpt-5.6-luna,0.1,0.5,"{
+  ""answer"": ""Use `requests.patch()` with the target URL and optionally provide the request body via `data` or `json`. For example: `response = requests.patch('https://api.example.com/resource/1', json={'name': 'Updated name'})`. You can inspect the result with `response.status_code` and `response.json()`. The equivalent generic call is `requests.request('PATCH', url, json=payload)`."",
+  ""file"": ""api.py"",
+  ""line"": 133
+}",yes
+q03,Which method strips secrets from the credentials to avoid leakage?,sessions.py,SessionRedirectMixin.rebuild_auth,sessions.py::SessionRedirectMixin.rebuild_auth; api.py::request; sessions.py::SessionRedirectMixin.rebuild_proxies,yes,1,no,,,,no,1427,34,openai,gpt-5.6-luna,0.1,0.5,"{
+  ""answer"": ""SessionRedirectMixin.rebuild_auth"",
+  ""file"": ""sessions.py"",
+  ""line"": ""282-300""
+}",yes
+q04,Can you pass JSON to a delete request?,api.py,delete,api.py::request; models.py::Response.json; api.py::delete,yes,3,no,,,,no,1392,145,openai,gpt-5.6-luna,0.1,0.5,"{
+  ""answer"": ""Yes. You can pass JSON to a DELETE request using the `json` keyword argument, for example: `requests.delete(url, json={\""id\"": 123})`. The JSON is serialized into the request body with the appropriate content type. However, the server must support and process request bodies on DELETE requests."",
+  ""file"": ""api.py"",
+  ""line"": ""14-24, 148-157""
+}",yes
+q05,"After a response is complete, what cleanup happens for the connection?",models.py,Response.close,help.py::_implementation; utils.py::super_len; models.py::PreparedRequest.__init__,no,,yes,"The response closes its raw connection if the content has not been fully consumed, then releases the connection back to the connection pool.",models.py,1031,yes,1274,382,openai,gpt-5.6-luna,0.1,0.5,"{
+  ""answer"": ""The response closes its raw connection if the content has not been fully consumed, then releases the connection back to the connection pool."",
+  ""file"": ""models.py"",
+  ""line"": 1031
+}",yes
+q06,What adds the status codes list to the documentation?,status_codes.py,_init,models.py::Response.is_permanent_redirect; sessions.py::SessionRedirectMixin.resolve_redirects; sessions.py::SessionRedirectMixin.rebuild_method,no,,yes,"The status-code names and numeric values are defined in the `_codes` mapping, exposed as `requests.codes`. The references in `models.py` and `sessions.py` only use those predefined codes; they do not add them to the documentation.",src/requests/status_codes.py,13,no,1571,596,openai,gpt-5.6-luna,0.1,0.5,"{
+  ""answer"": ""The status-code names and numeric values are defined in the `_codes` mapping, exposed as `requests.codes`. The references in `models.py` and `sessions.py` only use those predefined codes; they do not add them to the documentation."",
+  ""file"": ""src/requests/status_codes.py"",
+  ""line"": 13
+}",no
+q07,How do you remove a cookie?,cookies.py,remove_cookie_by_name,cookies.py::remove_cookie_by_name; cookies.py::RequestsCookieJar.set; cookies.py::RequestsCookieJar.__delitem__,yes,1,no,,,,no,484,140,openai,gpt-5.6-luna,0.1,0.5,"{
+  ""answer"": ""Remove a cookie by calling `remove_cookie_by_name(cookiejar, name, domain=None, path=None)`. It finds matching cookies and removes them with `cookiejar.clear(domain, path, name)`. With `RequestsCookieJar`, you can also use `jar.set(name, None, domain=..., path=...)` or `del jar[name]`."",
+  ""file"": ""cookies.py"",
+  ""line"": ""151-167""
+}",yes
+q08,How do hooks get registered?,models.py,RequestHooksMixin.register_hook,models.py::RequestHooksMixin.deregister_hook; hooks.py::dispatch_hook; sessions.py::merge_hooks,no,,no,,,,no,411,395,openai,gpt-5.6-luna,0.1,0.5,"{
+  ""answer"": ""Hooks are registered through RequestHooksMixin.register_hook in models.py. A callable hook is appended to the list for the specified event; an iterable of hooks is extended into that list. During a request, session-level and request-level hooks are merged by merge_hooks, then dispatch_hook looks up the event and invokes each hook in order. A hook may return replacement hook data; returning None leaves the current data unchanged. Hooks can be removed with deregister_hook, which removes the matching hook from the event list."",
+  ""file"": ""models.py; sessions.py; hooks.py"",
+  ""line"": ""models.py: register_hook (immediately before lines 218–227); sessions.py: 91–103; hooks.py: 22–33""
+}",yes
+q09,How do you access the text of a response?,models.py,Response.text,models.py::Response.__init__; models.py::Response.text; models.py::Response.json,yes,2,no,,,,no,1315,77,openai,gpt-5.6-luna,0.1,0.5,"{
+  ""answer"": ""Access the response text through the `text` property, for example: `response.text`. It returns the response body decoded as a Unicode string. If you need the raw bytes, use `response.content`; for JSON, use `response.json()`."",
+  ""file"": ""models.py"",
+  ""line"": ""909-945""
+}",yes
+q10,Who can provide technical support for this codebase?,,,help.py::_implementation; models.py::PreparedRequest.prepare_content_length; utils.py::prepend_scheme_if_needed,n/a,,no,,,,no,926,436,openai,gpt-5.6-luna,0.1,0.5,"{
+  ""answer"": ""The Requests maintainers and community can provide technical support through the project's GitHub repository and the Python Requests Stack Overflow community."",
+  ""file"": ""README.rst"",
+  ""line"": ""Support section""
+}",no

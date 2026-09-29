@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "7bf5726e17944b08ee696e7aecb5f185",
+  "asked_at": "2026-09-29T00:58:34+00:00",
+  "input_tokens": 1315,
+  "output_tokens": 77,
+  "text": "{\n  \"answer\": \"Access the response text through the `text` property, for example: `response.text`. It returns the response body decoded as a Unicode string. If you need the raw bytes, use `response.content`; for JSON, use `response.json()`.\",\n  \"file\": \"models.py\",\n  \"line\": \"909-945\"\n}"
+}

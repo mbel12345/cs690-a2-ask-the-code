@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "de9d23ea1cf3980280f6688637c85d4e",
+  "asked_at": "2026-09-29T00:58:13+00:00",
+  "input_tokens": 1392,
+  "output_tokens": 145,
+  "text": "{\n  \"answer\": \"Yes. You can pass JSON to a DELETE request using the `json` keyword argument, for example: `requests.delete(url, json={\\\"id\\\": 123})`. The JSON is serialized into the request body with the appropriate content type. However, the server must support and process request bodies on DELETE requests.\",\n  \"file\": \"api.py\",\n  \"line\": \"14-24, 148-157\"\n}"
+}

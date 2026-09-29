@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "120ebf1e4cccf18c24da821a8b1171e7",
+  "asked_at": "2026-09-29T00:58:25+00:00",
+  "input_tokens": 1571,
+  "output_tokens": 596,
+  "text": "{\n  \"answer\": \"The status-code names and numeric values are defined in the `_codes` mapping, exposed as `requests.codes`. The references in `models.py` and `sessions.py` only use those predefined codes; they do not add them to the documentation.\",\n  \"file\": \"src/requests/status_codes.py\",\n  \"line\": 13\n}"
+}
