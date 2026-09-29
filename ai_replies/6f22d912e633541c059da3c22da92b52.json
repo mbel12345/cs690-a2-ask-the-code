@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "6f22d912e633541c059da3c22da92b52",
+  "asked_at": "2026-09-29T00:14:59+00:00",
+  "input_tokens": 1582,
+  "output_tokens": 35,
+  "text": "{\"answer\":\"The `rebuild_auth` method strips the `Authorization` header when a redirect could leak credentials.\",\"file\":\"sessions.py\",\"line\":282}"
+}

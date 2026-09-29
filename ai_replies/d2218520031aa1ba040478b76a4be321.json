@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "d2218520031aa1ba040478b76a4be321",
+  "asked_at": "2026-09-29T00:15:05+00:00",
+  "input_tokens": 640,
+  "output_tokens": 53,
+  "text": "{\"answer\":\"Use `RequestsCookieJar.__delitem__(name)` to remove a cookie by name, or call `remove_cookie_by_name(cookiejar, name, domain=None, path=None)` directly.\",\"file\":\"cookies.py\",\"line\":343}"
+}

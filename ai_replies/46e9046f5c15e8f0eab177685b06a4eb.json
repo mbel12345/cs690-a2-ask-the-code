@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "46e9046f5c15e8f0eab177685b06a4eb",
+  "asked_at": "2026-09-29T00:15:00+00:00",
+  "input_tokens": 1548,
+  "output_tokens": 44,
+  "text": "{\"answer\":\"Yes. Pass JSON using the `json` keyword argument; `delete` forwards it to `request`, which sends it with the DELETE request.\",\"file\":\"api.py\",\"line\":148}"
+}

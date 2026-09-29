@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "6d39f59be168e8ead22eae6258017aab",
+  "asked_at": "2026-09-29T00:15:35+00:00",
+  "input_tokens": 366,
+  "output_tokens": 36,
+  "text": "{\"answer\":\"Call remove_cookie_by_name(cookiejar, name, domain=None, path=None) to remove a cookie.\",\"file\":\"cookies.py\",\"line\":151}"
+}

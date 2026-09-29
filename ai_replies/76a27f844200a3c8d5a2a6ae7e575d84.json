@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "76a27f844200a3c8d5a2a6ae7e575d84",
+  "asked_at": "2026-09-29T00:15:38+00:00",
+  "input_tokens": 540,
+  "output_tokens": 32,
+  "text": "{\"answer\":\"Access the response's `text` property, e.g. `response.text`.\",\"file\":\"models.py\",\"line\":910}"
+}

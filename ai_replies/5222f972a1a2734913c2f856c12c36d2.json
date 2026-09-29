@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "5222f972a1a2734913c2f856c12c36d2",
+  "asked_at": "2026-09-29T00:14:57+00:00",
+  "input_tokens": 1603,
+  "output_tokens": 98,
+  "text": "{\"answer\":\"prepare_cookies\",\"file\":\"models.py\",\"line\":610}"
+}

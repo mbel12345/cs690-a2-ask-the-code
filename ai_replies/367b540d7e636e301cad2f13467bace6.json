@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "367b540d7e636e301cad2f13467bace6",
+  "asked_at": "2026-09-29T00:15:13+00:00",
+  "input_tokens": 54676,
+  "output_tokens": 36,
+  "text": "{\"answer\":\"The should_strip_auth method strips authentication credentials when redirecting to a different host, port, or scheme.\",\"file\":\"sessions.py\",\"line\":127}"
+}

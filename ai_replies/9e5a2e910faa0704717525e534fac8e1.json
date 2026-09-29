@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "9e5a2e910faa0704717525e534fac8e1",
+  "asked_at": "2026-09-29T00:15:28+00:00",
+  "input_tokens": 408,
+  "output_tokens": 19,
+  "text": "{\"answer\":\"rebuild_auth\",\"file\":\"sessions.py\",\"line\":282}"
+}

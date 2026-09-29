@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "9ab0944f4c529276f03a67a4f66aa183",
+  "asked_at": "2026-09-29T00:15:26+00:00",
+  "input_tokens": 406,
+  "output_tokens": 19,
+  "text": "{\"answer\":\"merge_cookies\",\"file\":\"cookies.py\",\"line\":542}"
+}

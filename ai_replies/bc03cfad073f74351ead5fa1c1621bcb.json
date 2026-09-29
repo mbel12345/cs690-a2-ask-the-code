@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "bc03cfad073f74351ead5fa1c1621bcb",
+  "asked_at": "2026-09-29T00:15:31+00:00",
+  "input_tokens": 299,
+  "output_tokens": 164,
+  "text": "{\"answer\":\"The `delete` method accepts `**kwargs` and forwards them to `request`, so JSON can be passed as a keyword argument (for example, `json=...`) if supported by `request`.\",\"file\":\"api.py\",\"line\":148}"
+}

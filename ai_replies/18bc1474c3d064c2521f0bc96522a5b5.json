@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "18bc1474c3d064c2521f0bc96522a5b5",
+  "asked_at": "2026-09-29T00:15:22+00:00",
+  "input_tokens": 54671,
+  "output_tokens": 49,
+  "text": "{\"answer\":\"Hooks are registered with the `register_hook` method on `RequestHooksMixin`, which validates the event and appends callable hooks to `self.hooks[event]`.\",\"file\":\"models.py\",\"line\":207}"
+}

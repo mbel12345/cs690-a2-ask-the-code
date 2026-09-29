@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "324a0b23573990760a77d540db43b4fa",
+  "asked_at": "2026-09-29T00:14:58+00:00",
+  "input_tokens": 1365,
+  "output_tokens": 33,
+  "text": "{\"answer\":\"Use `requests.patch(url, data=None, **kwargs)` to send a PATCH request.\",\"file\":\"api.py\",\"line\":133}"
+}

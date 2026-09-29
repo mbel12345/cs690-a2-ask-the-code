@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "cfeb388d3c62074f1068d1cd42255fcc",
+  "asked_at": "2026-09-29T00:15:37+00:00",
+  "input_tokens": 309,
+  "output_tokens": 63,
+  "text": "{\"answer\":\"Hooks are registered with `register_hook(event, hook)`. The event must already exist in `self.hooks`; a callable hook is appended, while an iterable contributes its callable elements. Otherwise, an unsupported event raises `ValueError`.\",\"file\":\"models.py\",\"line\":207}"
+}

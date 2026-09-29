@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "0ca0b2a6108f30349124316330a74330",
+  "asked_at": "2026-09-29T00:15:32+00:00",
+  "input_tokens": 332,
+  "output_tokens": 52,
+  "text": "{\"answer\":\"The connection is released back to the pool. If the content has not been consumed, the raw connection is closed first; then its `release_conn()` method is called if available.\",\"file\":\"models.py\",\"line\":1026}"
+}

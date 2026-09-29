@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "d9ecd389be9341cddcd38f50d26bc16a",
+  "asked_at": "2026-09-29T00:15:34+00:00",
+  "input_tokens": 376,
+  "output_tokens": 75,
+  "text": "{\"answer\":\"The `doc(code)` function formats each status code, and `_init()` appends the resulting list to `__doc__` using `__doc__ = __doc__ + \\\"\\\\n\\\" + \\\"\\\\n\\\".join(doc(code) for code in sorted(_codes))`.\",\"file\":\"status_codes.py\",\"line\":122}"
+}

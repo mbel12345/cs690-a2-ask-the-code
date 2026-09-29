@@ -1,0 +1,9 @@
+{
+  "provider": "openai",
+  "model": "gpt-5.6-luna",
+  "prompt_key": "9ce6d0f968fcd812369d262197c1e3ff",
+  "asked_at": "2026-09-29T00:15:17+00:00",
+  "input_tokens": 54678,
+  "output_tokens": 49,
+  "text": "{\"answer\":\"The response body is consumed when `stream=False`, which exhausts the data and releases the connection; `Response.close()` also releases the underlying connection back to the pool.\",\"file\":\"sessions.py\",\"line\":745}"
+}
