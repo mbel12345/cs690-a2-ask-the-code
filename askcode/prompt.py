@@ -43,7 +43,7 @@ def build_prompt_five_part(question: str, chunks: list[Chunk]) -> Prompt:
    return Prompt(
       system="""
 Goal: Answer the user's requestion about the requests codebase. Return the file and method that answers the question. Return "not found in the code shown" if the method cannot be round. It should return "null" for the file and function in this case.
-Inputs and outputs: Inputs - A question (str) that asks about the requests library. Outputs - json object that contains "answer", "file", and "function". The answer should contain in parentheses the "line" numbers of the function.
+Inputs and outputs: Inputs - A question (str) that asks about the requests library. Outputs - json object that contains "answer", "file", and "line".
 Rules: Only use the code shown in the "Code:" section. Do not look on the internet or any other source.
 Example: {"answer": "You access the text attribute of the response", "file": "models.py", "line": 909}
 Reply format: json object that contains "answer", "file", and "line".
