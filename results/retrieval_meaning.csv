@@ -1,0 +1,11 @@
+id,question,expected_file,expected_function,retrieved,hit,hit_rank
+q01,Which function adds cookies to the cookiejar?,cookies.py,merge_cookies,utils.py::add_dict_to_cookiejar; cookies.py::merge_cookies; cookies.py::cookiejar_from_dict,yes,2
+q02,How do you send a PATCH request?,api.py,patch,sessions.py::Session.patch; api.py::patch; sessions.py::Session.send,yes,2
+q03,Which method strips secrets from the credentials to avoid leakage?,sessions.py,SessionRedirectMixin.rebuild_auth,sessions.py::SessionRedirectMixin.rebuild_auth; __init__.py::_check_cryptography; help.py::info,yes,1
+q04,Can you pass JSON to a delete request?,api.py,delete,sessions.py::Session.delete; api.py::delete; models.py::Response.json,yes,2
+q05,"After a response is complete, what cleanup happens for the connection?",models.py,Response.close,models.py::Response.close; models.py::Response.__init__; sessions.py::SessionRedirectMixin.rebuild_auth,yes,1
+q06,What adds the status codes list to the documentation?,status_codes.py,_init,models.py::Response.__repr__; status_codes.py::_init; models.py::Response.__nonzero__,yes,2
+q07,How do you remove a cookie?,cookies.py,remove_cookie_by_name,cookies.py::remove_cookie_by_name; cookies.py::RequestsCookieJar.__delitem__; cookies.py::RequestsCookieJar.__getstate__,yes,1
+q08,How do hooks get registered?,models.py,RequestHooksMixin.register_hook,models.py::RequestHooksMixin.register_hook; models.py::PreparedRequest.prepare_hooks; hooks.py::dispatch_hook,yes,1
+q09,How do you access the text of a response?,models.py,Response.text,models.py::Response.text; models.py::Response.__enter__; models.py::Response.__init__,yes,1
+q10,Who can provide technical support for this codebase?,,,help.py::info; adapters.py::HTTPAdapter.build_response; auth.py::HTTPDigestAuth.build_digest_header,n/a,
