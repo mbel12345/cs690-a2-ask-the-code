@@ -1,0 +1,37 @@
+Table 1. Finding the right function
+
+| Run | Right function in top 3 |
+| --- | --- |
+| retrieval_words | 5 of 9 |
+| retrieval_meaning | 9 of 9 |
+
+Table 2. Answers
+
+| Run | Valid JSON | Right place | Correct (your marks) | Input tokens | Output tokens | Cost (USD) |
+| --- | --- | --- | --- | --- | --- | --- |
+| top3_words_five_part | 10 of 10 | 5 of 10 | 7 of 10 | 13,013 | 470 | 0.0015 |
+| whole_five_part | 10 of 10 | 7 of 10 | 9 of 10 | 546,743 | 403 | 0.0549 |
+| gold_five_part | 10 of 10 | 10 of 10 | 10 of 10 | 3,598 | 530 | 0.0006 |
+| top3_words_minimal | 4 of 10 | 2 of 10 | 7 of 10 | 11,456 | 2,729 | 0.0025 |
+
+Table 3. Evidence for Step 5: questions marked wrong in top3_words_five_part
+
+| Question | Hit in top 3 | Correct with gold context |
+| --- | --- | --- |
+| q05 | no | yes |
+| q06 | no | yes |
+| q08 | no | yes |
+
+Table 4. Evidence for Step 7: where each search ranked the right function
+
+| Question | Rank with words | Rank with meaning |
+| --- | --- | --- |
+| q01 | not in top 3 | 2 |
+| q02 | 2 | 2 |
+| q03 | 1 | 1 |
+| q04 | 3 | 2 |
+| q05 | not in top 3 | 1 |
+| q06 | not in top 3 | 2 |
+| q07 | 1 | 1 |
+| q08 | not in top 3 | 1 |
+| q09 | 2 | 1 |

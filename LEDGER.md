@@ -72,6 +72,11 @@ evidence: All test cases related to answer.py passed
 risk: Low risk, this is a very simple question, mitigated by testing. It could mess up a few edge cases if wrong.
 
 ## Entry 5
-dataset:   results/top3_words_minimal.csv at b9d87f0
-result:    results/summary_step_6.txt
-changed:   I determined that just basing on top 3 words is not sufficient for getting a good result. It was tied for worst out of the 4 runs (7 out of 10 correct).
+dataset:   results/retrieval_meaning.csv at 1706a37
+result:    results/summary_step_7.txt
+changed:   retrieval_meaning got 9 out of 9 vs 5 out of 9 for retrieval_words
+The ones it got right that the other got wrong:
+Which function adds cookies to the cookiejar?
+After a response is complete, what cleanup happens for the connection?
+What adds the status codes list to the documentation?
+How do hooks get registered?
