@@ -51,7 +51,7 @@ risk: Accidentally recording the wrong model
 ## Entry 2
 artifact: search_words.py at commit f4737df
 tool: Copilot, for splitting words properly
-prompts: How to properly extract words? Split didn't work, I need to be able to handle _ and stuff
+prompts: How to properly extract words? Split didn't work, I need to be able to handle _ and stuff; prompts/copilot_entry_2.md
 review: Solution is consistent with my regex knowledge. But it also didn't fix my problem of breaking up based on _ being a word boundary, so I had to remove _ from the regex.
 checks: ai_replies/copilot_entry_2.txt (I didn't understand the ledger requirement at first, which is why I went back later to add the actual AI output)
 evidence: All test cases related to search_words passed (test_search.py)
@@ -65,7 +65,7 @@ changed:   I determined that the gold result was the best, which confirms that r
 ## Entry 4
 artifact: answer.py at commit f4737df
 tool: Copilot, for processing data types properly
-prompts: How to properly check if something is in int, because it appears it is classifying a true as an int
+prompts: How to properly check if something is in int, because it appears it is classifying a true as an int; prompts/copilot_entry_4.md
 review: This is consistent with my understanding of datatypes. Also, it talked about floats, but I ommitted any references to floats in my code since I know line line must be an int.
 checks: ai_replies/copilot_entry_4.txt
 evidence: All test cases related to answer.py passed
@@ -80,3 +80,12 @@ Which function adds cookies to the cookiejar?
 After a response is complete, what cleanup happens for the connection?
 What adds the status codes list to the documentation?
 How do hooks get registered?
+
+## Entry 6
+artifact: search_meaning.py at commit 15b17d9
+tool: Copilot, for understanding the cosine formula
+prompts: Asked for clarity on how the cosine formula works and to walk through the test cases; ai_prompts/copilot_entry_6.md
+review: Once copilot gave me what the formula was, it made sense. I thought length in the denominator mean len, but seeing the magnitude makes more sense.
+checks: ai_replies/copilot_entry_6.txt
+evidence: All test cases related to test_search_meaning.py passed
+risk: Risk is me misinterpreting the formula, but that risk is mitigated by unit tests.
