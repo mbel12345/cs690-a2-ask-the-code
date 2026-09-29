@@ -57,7 +57,7 @@ checks: ai_replies/copilot_entry_2.txt (I didn't understand the ledger requireme
 evidence: All test cases related to search_words passed (test_search.py)
 risk: If there is an edge case I didn't think about
 
-# Entry 3
+## Entry 3
 dataset:   results/*.csv at d84a4be
 result:    results/summary_step_5.txt
 changed:   I determined that the gold result was the best, which confirms that reading the whole corpus does not make it better (more is not always better).
@@ -70,3 +70,8 @@ review: This is consistent with my understanding of datatypes. Also, it talked a
 checks: ai_replies/copilot_entry_4.txt
 evidence: All test cases related to answer.py passed
 risk: Low risk, this is a very simple question, mitigated by testing. It could mess up a few edge cases if wrong.
+
+## Entry 5
+dataset:   results/top3_words_minimal.csv at b9d87f0
+result:    results/summary_step_6.txt
+changed:   I determined that just basing on top 3 words is not sufficient for getting a good result. It was tied for worst out of the 4 runs (7 out of 10 correct).
